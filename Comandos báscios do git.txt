@@ -1,0 +1,21 @@
+Comandos do git
+cd ao usar esse comando e indicar uma caminho ex:"
+cd /c/users/pedro", conseguimos navegar até a pasta indicada
+
+
+ls lista os arquivos na pasta
+mkdir cria um arquivo. Obs: deve se utilizar o mkdir
+seguido do nome e extensão do arquivo ex: mkdir text.txt
+
+
+commit
+Para que o diretório esteja apto a ser "commitado" é necessário
+utilizar o comando git init dps, git add ., git commit -m "nome do commit"
+
+mv o comando move um arquivo de um diretório para o outro
+
+
+Para enviar um repostório local para um repositorio do github
+utiliza-se o comando: git remote add origin "link do repostorio no github"
+dps se utiliza o 
+git push origin main
