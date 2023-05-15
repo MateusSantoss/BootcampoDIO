@@ -1,0 +1,54 @@
+<!--Crie uma classe para representar carros
+os carros possuem uma marca, uma cor, e um gasto de combustivel por kilometro rodado
+crie um metodo que dado a quantidade de quilômetros e opreço do combustivel nos dÊ o valor gasto em reais para realizar este percurso-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+
+		class Carro{
+			//criar os atributos do carro
+			cor;
+			marca;
+			gastoMedioPorKm;
+			constructor(cor, marca, gastoMedioPorKm) {
+				this.cor = cor 
+				this.marca = marca
+				this.gastoMedioPorKm = gastoMedioPorKm
+			}
+             //calcula o gasto com base na distancia, no preçoc do litro e do gasto medio por km
+			calcularGastoPercuso (distancia, precoLitro) {
+				let gastoPercuso = this.gastoMedioPorKm * distancia * precoLitro
+
+				return `Para essa viagem o gasto será de ${gastoPercuso} reais`
+
+			}
+ 
+
+
+			
+ 
+			
+		}
+		
+		let gol = new Carro("vermelho", "Volkswagen", 1/12)
+		console.log(gol)
+		console.log(gol.calcularGastoPercuso(80, 5))
+
+		let aventador = new Carro ("dorada", "lamborgini", 1/3)
+		console.log(aventador)
+		console.log(aventador.calcularGastoPercuso(80, 5))
+		
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
